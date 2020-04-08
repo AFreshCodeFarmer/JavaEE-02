@@ -1,5 +1,5 @@
 <%@ page import="java.util.List" %>
-<%@ page import="edu.bjtu.sse.djd.JavaEE.class345.model.Homework" %>
+<%@ page import="Homework" %>
 <%--
   Created by IntelliJ IDEA.
   User: 董金达

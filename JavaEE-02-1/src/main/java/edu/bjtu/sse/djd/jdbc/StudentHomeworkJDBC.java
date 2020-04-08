@@ -1,7 +1,7 @@
-package edu.bjtu.sse.djd.JavaEE.class345.jdbc;
+package edu.bjtu.sse.djd.jdbc;
 
-import edu.bjtu.sse.djd.JavaEE.class345.DBCP;
-import edu.bjtu.sse.djd.JavaEE.class345.model.StudentHomework;
+import edu.bjtu.sse.djd.DBCP;
+import edu.bjtu.sse.djd.entity.StudentHomework;
 
 import java.sql.*;
 import java.util.ArrayList;

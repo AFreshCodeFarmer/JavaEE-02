@@ -1,14 +1,12 @@
-package edu.bjtu.sse.djd.JavaEE.class345.model;
+package edu.bjtu.sse.djd.entity;
 
 import java.util.Date;
 
-public class Homework {
+public class Student {
 
     private Long id;
 
-    private String homeworkTittle;
-
-    private String homeworkContent;
+    private String name;
 
     private Date createTime;
 
@@ -22,20 +20,12 @@ public class Homework {
         this.id = id;
     }
 
-    public String getHomeworkTittle() {
-        return homeworkTittle;
+    public String getName() {
+        return name;
     }
 
-    public void setHomeworkTittle(String homeworkTittle) {
-        this.homeworkTittle = homeworkTittle;
-    }
-
-    public String getHomeworkContent() {
-        return homeworkContent;
-    }
-
-    public void setHomeworkContent(String homeworkContent) {
-        this.homeworkContent = homeworkContent;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public Date getCreateTime() {
@@ -56,10 +46,9 @@ public class Homework {
 
     @Override
     public String toString() {
-        return "Homework{" +
+        return "Student{" +
                 "id=" + id +
-                ", homeworkTittle='" + homeworkTittle + '\'' +
-                ", homeworkContent='" + homeworkContent + '\'' +
+                ", name='" + name + '\'' +
                 ", createTime=" + createTime +
                 ", updateTime=" + updateTime +
                 '}';

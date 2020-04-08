@@ -1,5 +1,5 @@
 <%@ page import="java.util.List" %>
-<%@ page import="edu.bjtu.sse.djd.JavaEE.class345.model.Student" %>
+<%@ page import="Student" %>
 <%--
   Created by IntelliJ IDEA.
   User: 董金达

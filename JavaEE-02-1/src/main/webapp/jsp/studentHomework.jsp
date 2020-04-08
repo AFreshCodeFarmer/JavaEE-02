@@ -1,6 +1,6 @@
-<%@ page import="edu.bjtu.sse.djd.JavaEE.class345.model.StudentHomework" %>
+<%@ page import="StudentHomework" %>
 <%@ page import="java.util.List" %>
-<%@ page import="edu.bjtu.sse.djd.JavaEE.class345.jdbc.StudentHomeworkJDBC" %>
+<%@ page import="StudentHomeworkJDBC" %>
 
 <%--
   Created by IntelliJ IDEA.

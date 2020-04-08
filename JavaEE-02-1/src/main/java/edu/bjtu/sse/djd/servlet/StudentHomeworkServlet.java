@@ -1,7 +1,7 @@
-package edu.bjtu.sse.djd.JavaEE.class345.servlet;
+package edu.bjtu.sse.djd.servlet;
 
-import edu.bjtu.sse.djd.JavaEE.class345.jdbc.StudentHomeworkJDBC;
-import edu.bjtu.sse.djd.JavaEE.class345.model.StudentHomework;
+import edu.bjtu.sse.djd.jdbc.StudentHomeworkJDBC;
+import edu.bjtu.sse.djd.entity.StudentHomework;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

@@ -1,4 +1,4 @@
-package edu.bjtu.sse.djd.JavaEE.class345;
+package edu.bjtu.sse.djd;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
@@ -21,33 +21,33 @@ public class DBCP {
         synchronized (DBCP.class) {
             if (hikariDataSource == null) {
                 try {
-                // Hikari 数据库连接池配置
-                HikariConfig hikariConfig = new HikariConfig();
+                    // Hikari 数据库连接池配置
+                    HikariConfig hikariConfig = new HikariConfig();
 
-                // 导入 property 配置文件
+                    // 导入 property 配置文件
                     Properties properties = new Properties();
 
-                    InputStream inputStream = DBCP.class.getClassLoader().getResourceAsStream("edu/bjtu/sse/djd/JavaEE/class345/Application.properties");
+                    InputStream inputStream = DBCP.class.getClassLoader().getResourceAsStream("edu/bjtu/sse/djd/Application.properties");
 
                     properties.load(inputStream);
                     inputStream.close();
 
-                // 数据库驱动 (Class.forName())
+                    // 数据库驱动 (Class.forName())
                     hikariConfig.setDriverClassName(properties.getProperty("driverName"));
 //                hikariConfig.setDriverClassName("com.mysql.jdbc.Driver");
-                // 数据库url
+                    // 数据库url
                     hikariConfig.setJdbcUrl(properties.getProperty("dbUrl"));
 //                hikariConfig.setJdbcUrl("jdbc:mysql://localhost:3306/school?useSSL=FALSE&serverTimezone=UTC&characterEncoding=utf8");
-                // 数据库用户名
+                    // 数据库用户名
                     hikariConfig.setUsername(properties.getProperty("userName"));
 //                hikariConfig.setUsername("root");
-                // 数据库密码
+                    // 数据库密码
                     hikariConfig.setPassword(properties.getProperty("password"));
 //                hikariConfig.setPassword("990818");
 
-                hikariDataSource = new HikariDataSource(hikariConfig);
+                    hikariDataSource = new HikariDataSource(hikariConfig);
 
-                return hikariDataSource;
+                    return hikariDataSource;
 
                 } catch (IOException e) {
                     e.printStackTrace();
@@ -57,9 +57,9 @@ public class DBCP {
         return null;
     }
 
-    public static void main(String[] args) {
-        getHikariDataSource();
-    }
+//    public static void main(String[] args) {
+//        getHikariDataSource();
+//    }
 
 
 }
